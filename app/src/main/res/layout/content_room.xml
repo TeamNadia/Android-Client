@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Music Chooser"
+        android:singleLine="true"
+        android:textColor="#ff5a5a"
+        android:layout_marginBottom="15dp"
+        android:textSize="40dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Select a room:"
+        android:id="@+id/txtRooms"
+        android:layout_weight="0.04"
+        android:textColor="#000000" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:id="@+id/listRooms"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="0.51"
+        android:layout_marginBottom="5dp"
+        android:choiceMode="singleChoice"
+        android:listSelector="@android:color/darker_gray"
+        android:background="#ffd7ab" />
+
+    <Button
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:text="Refresh"
+        android:id="@+id/btnRefresh"
+        android:textColor="#ffffff"
+        android:background="#e7ff9100"
+        android:textSize="16dp"
+        android:layout_marginBottom="25dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Enter the pin code:"
+        android:textColor="#000000" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtRoomID"
+        android:layout_weight="0.15"
+        android:hint="e.g. 6AX2B4"
+        android:layout_marginBottom="10dp"
+        android:background="#acd3b3"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Join"
+        android:id="@+id/btnJoin"
+        android:textColor="#ffffff"
+        android:background="#ae187215"
+        android:textSize="18dp"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>

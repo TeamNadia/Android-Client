@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#262626"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Music Chooser"
+        android:textColor="#ffd000"
+        android:layout_marginBottom="10dp"
+        android:textSize="30dp"
+        android:layout_gravity="center_horizontal" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Music vote"
+        android:textColor="#b1fd85"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/txtVoteArtist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:hint="@string/txtVoteArtist"
+        android:autoText="false" />
+
+    <EditText android:id="@+id/txtVoteTrack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:hint="@string/txtVoteTrack"
+        android:autoText="false" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnSubmit"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/btnSubmit"
+        android:background="#50d1a9" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Music queue"
+        android:textColor="#b1fd85"
+        android:textSize="18dp"
+        android:id="@+id/textView" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="208dp"
+        android:id="@+id/listQueue"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#ffe97d"
+        android:choiceMode="singleChoice"
+        android:layout_weight="0.76" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnReload"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/btnReload"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:background="#5781f5" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnExit"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/btnExit"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:background="#f55757" />
+    </LinearLayout>
+
+</LinearLayout>

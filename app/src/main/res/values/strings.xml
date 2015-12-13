@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Crowd-controlled Entertainment System</string>
+    <string name="action_settings">Settings</string>
+    <string name="txtVoteTrack">Enter a track...</string>
+    <string name="txtVoteArtist">Enter an artist...</string>
+    <string name="btnSubmit">Submit Song</string>
+    <string name="btnReload">Refresh</string>
+    <string name="btnExit">Exit Room</string>
+    <string name="title_activity_room">Crowd-controlled Entertainment System</string>
+</resources>
